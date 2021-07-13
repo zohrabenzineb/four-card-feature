@@ -1,0 +1,113 @@
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins" , sans-serif;
+    text-align: center;
+    display: block;
+    align-items: center;
+    justify-content: center; 
+    min-height: 100vh;
+    
+}
+
+section{
+    background-color: hsl(0, 0%, 98%);
+    margin: 10px;
+    padding-left: 40px;
+  }
+ .box{
+    width: 350px;
+    height:280px ;
+    background-color: white;
+    padding: 30px; 
+    margin: 15px;
+    border-radius: 5px;  
+    box-shadow: 0 10px 10px rgba(68, 67, 67, 0.3) ;
+    position: relative;
+    overflow: hidden;
+    } 
+.box::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    
+}
+ .section1::after{
+    background-color:  hsl(180, 62%, 55%);
+       }
+ .section3::after{
+        background-color: hsl(34, 97%, 64%);
+   }
+  .section2::after{
+        background-color: hsl(0, 78%, 62%);
+     }
+  .section4::after{
+       background-color: hsl(212, 86%, 64%);
+ }
+ .card-body .box h2{
+     font-weight: 600;
+     Font-size: 20px;
+     text-align: left;
+     padding: 20px;
+ }
+ .card-body .box p{
+    font-weight: 400;
+    Font-size: 15px;
+    text-align: left;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: hsl(0, 5%, 43%, 0.6);
+    line-height: 1.8;
+}
+img{
+    position: relative;
+    transform: translate(100px, -15px);
+    }
+.card-header {
+       padding: 50px 20px;      
+    }
+.card-header p{
+        font-weight: 400;
+        Font-size: 15px;
+        text-align: center;
+        color: hsl(0, 5%, 43%, 0.6);
+        line-height: 1.8;
+        padding-top: 10px;
+    }
+.card-header h2{
+    color: hsl(0, 5%, 43%, 0.6);  
+    font-weight: 600;
+    Font-size: 32px;
+    text-align: center;
+    line-height: 1.8;
+}
+.card-header h1{
+        font-weight: 600;
+        Font-size: 32px;
+        text-align: center;
+        line-height: 1.8;
+        padding-top: 20px;
+    }
+    @media (min-width :768px){
+        .card-body  {
+      display: flex;
+      flex-wrap: wrap;
+     justify-content: center;
+      margin: 0 auto;
+      max-width: 1140px;
+       }
+       .push{
+           transform: translateY(50%);
+       }
+       
+    }
